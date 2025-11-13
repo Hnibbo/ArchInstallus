@@ -1,0 +1,15 @@
+App(
+    appid="archinstallus",
+    name="ArchInstallus",
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point="archinstallus_main",
+    sources=[
+        "archinstallus.c",
+    ],
+    requires=[
+        "gui",
+        "input",
+        "notification",
+    ],
+    stack_size=2 * 1024,
+)

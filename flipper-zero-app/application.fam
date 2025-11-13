@@ -1,0 +1,12 @@
+App(
+    appid="archinstallus",
+    name="ArchInstallus",
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point="archinstallus_main",
+    cdefines=["ARCHINSTALLUS_APP_ENABLED"],
+    requires=["gui", "input", "notification"],
+    sources=[
+        "archinstallus.c",
+    ],
+    fap_icon_assets="assets",
+)
